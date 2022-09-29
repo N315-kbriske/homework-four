@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+/* Exo thin font from Google. */
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite; /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite; /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite; /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+body::before {
+  font-size: 8rem;
+  font-weight: 100;
+  font-style: normal;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.signIn {
+  padding-top: 25%;
+  width: 500px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.signIn .header {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 15px;
+}
+.signIn #email {
+  margin-bottom: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+}
+.signIn #password {
+  margin-bottom: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+}
+.signIn #submit {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+.card {
+  width: 500px;
+  border-radius: 5px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+}
+.card .cardImage {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card .cardImage img {
+  width: 85%;
+  height: 450px;
+  border-radius: 5px;
+}
+.card .contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+}
+.card .contentContainer .cardTitle {
+  font-size: 50px;
+  font-weight: bold;
+}
+.card .contentContainer .cardSubTitle {
+  font-size: 25px;
+}
+.card .contentContainer .cardContent {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.title .aiSubHeader {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+.title .aiLink {
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: rgb(13, 116, 164);
+  font-size: large;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.images .image-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+}
+.images .image-row .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+  height: 450px;
+  width: 375px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+.images .image-row .image img {
+  width: 350px;
+  border-radius: 7px;
+}
+.images .image-row .image .image-description {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
