@@ -132,6 +132,11 @@ nav a {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 500px) {
+  .signIn {
+    margin-top: 200px;
+  }
+}
 .card {
   width: 500px;
   border-radius: 5px;
@@ -170,6 +175,11 @@ nav a {
   font-size: 15px;
 }
 
+@media screen and (max-width: 500px) {
+  .card {
+    width: 450px;
+  }
+}
 .title {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
@@ -221,6 +231,16 @@ nav a {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    padding: 10px;
+    text-align: center;
+  }
+  .images .image-row {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
